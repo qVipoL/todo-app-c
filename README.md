@@ -1,11 +1,8 @@
-# TCP Chat Application
+# todo-app-c
 
-## Usage
+## usage
 * compile the app
-* run the server (./server/bin/main)
-* run the client (./client/bin/main)
-* enter username
-* enter room-name (if room does not exist, it will be created. if it exits you will join it)
+* run the app (./bin/todo_app)
 
 ## Makefile
 * compile: <code>make</code>
