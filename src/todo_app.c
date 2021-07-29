@@ -1,4 +1,4 @@
-#include "../include/todo_board.h"
+#include "../include/todo_list.h"
 
 int main() {
     todo_list_t *list = list_create();

@@ -1,7 +1,7 @@
 #include "../include/todo_task.h"
 
-#ifndef TODO_BOARD_H
-#define TODO_BOARD_H
+#ifndef TODO_LIST_H
+#define TODO_LIST_H
 
 typedef struct todo_list_node {
     todo_task_t *item;
