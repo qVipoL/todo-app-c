@@ -32,7 +32,6 @@ void list_remove_item(todo_list_t **list, todo_task_t *item) {
     }
 
     prev->next = cur->next;
-    task_destroy(cur->item);
     free(cur);
 }
 
@@ -52,7 +51,6 @@ void list_destroy(todo_list_t **list) {
     while (*list != NULL) {
         cur = *list;
         *list = (*list)->next;
-        task_destroy(cur->item);
         free(cur);
     }
 }
