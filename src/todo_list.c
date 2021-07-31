@@ -36,13 +36,13 @@ void list_remove_item(todo_list_t **list, todo_task_t *item) {
 }
 
 void list_display(todo_list_t *list) {
-    printf("tasks: ");
+    printf("tasks: [");
     while (list != NULL) {
-        printf("-> ");
         task_display(list->item);
+        printf("%s", list->next == NULL ? "" : ", ");
         list = list->next;
     }
-    printf("\n");
+    printf("]\n");
 }
 
 void list_destroy(todo_list_t **list) {
